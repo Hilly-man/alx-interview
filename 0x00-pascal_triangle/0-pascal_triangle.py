@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+"""
+0. Pascal's Triangle
+"""
+
 def pascal_triangle(n):
     if n <= 0:
         return []
@@ -10,10 +15,8 @@ def pascal_triangle(n):
             row.append(result[i-1][j-1] + result[i-1][j])
         row.append(1)
         result.append(row)
-
     return result
 
-# Example usage:
 n = 5
 triangle = pascal_triangle(n)
 print(triangle)
